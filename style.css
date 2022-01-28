@@ -1,0 +1,243 @@
+@font-face {
+	font-family: 'Raleway';
+	src: url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap);
+	font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Raleway', sans-serif, Arial, sans-serif;
+}
+
+#pri{
+	width: 992px;
+	margin: auto;
+}	
+
+header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px;
+}
+
+#logo img{
+	width: 120px;
+	height: auto;
+	margin-left: 15%;
+}
+
+#logo{
+	display: flex
+}
+
+header nav a{
+	color: black;
+	text-decoration: none;
+	font-size: 13px;
+}
+
+header nav ul{
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+}
+
+header nav li{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+																			/*Accroche*/
+
+#textbloc{
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	}
+
+#textbloc h1{
+	font-size: 110%;
+	margin-bottom: 0px;
+	
+}
+
+#textbloc p{
+	margin-top: 5px;
+	font-size: 80%;
+	font-size: 13px;
+}
+
+																			/*Fin Accroche*/
+
+#recherche{
+	width: 30%;
+	flex-flow: column nowrap;
+	font-weight: bold;
+	width: 40%;
+}
+form{
+	display: flex;
+	height: 40px;
+	margin-left: 5px;
+	margin-bottom: 10px;
+	
+}
+form label{
+	display: flex;
+	width: 50px;
+	justify-content: center;
+	align-items: center;
+	background-color: #F2F2F2;
+	border-radius: 30% 0% 0% 30%;
+}
+button{
+	background-color: #0065FC;
+	color: white;
+	padding: 12px;
+	border: #0065FC;
+	border-radius: 0% 25% 25% 0%;
+	font-family: 'Raleway', sans-serif, Arial, sans-serif;
+
+}
+
+#rechercher{
+	display: flex;
+	border: none;
+	font-weight: bold;
+	margin-left: 7px;
+	font-family: 'Raleway', sans-serif, Arial, sans-serif;
+}
+
+
+																		/*Partie Filtre*/
+#filtres{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	width: 75%;
+	height: 30px;
+}
+
+#filtres p{
+	font-weight: bold;
+	font-size: 0.9em;
+	margin: 5px 10px 5px 10px;
+	
+}
+
+.bouton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: lightgray solid 1px;
+	border-radius: 45px;
+	margin: 5px 10px 5px 10px;
+	height: 30px;
+}
+
+.imgco{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border-radius: 15px;
+	margin: auto;
+	width: 30px;
+	height: 30px;
+}
+																		/* Fin Partie Filtre*/				
+
+#loge{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin-left: 15px;
+}
+
+#logoinfo{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #0065FC;
+	border-radius: 45px;
+	border: lightgray solid 0.8px;
+    width: 17px;
+    height: 17px;
+    font-size: 10px;
+}
+
+#loge p{
+	font-size: 12px;
+	margin-left: 5px;
+}
+
+																		/*Section 1*/	
+#part1{
+	display: flex;
+	justify-content: space-between;
+	height: 420px;
+	
+}
+																		
+#blocmarseille{
+	display: flex;
+    flex-direction: column;
+	background-color: #F2F2F2;
+	width: 70%;
+	height: 400px;
+	border-radius: 5%;
+}
+
+#blocpopu{
+	display: flex;
+	background-color: #F2F2F2;
+	width: 27%;
+	height: 400px;
+	border-radius: 5% 0% 0% 5%;
+
+}
+
+
+
+																		/*Fin Section*/	
+
+footer{
+	display: flex;
+	justify-content: space-between;
+	background-color: #F2F2F2;
+	padding: 10px;
+}
+
+footer nav ul{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	width: 300px;
+	padding: 0px 0px 0px 20px;
+}
+
+footer nav li{
+	margin-right: 20px;
+	margin-top: 15px ;
+	}
+
+footer h3{
+	margin-top: 5px;
+	margin-bottom: 10px;
+
+}
+footer nav a{
+	color: black;
+	text-decoration: none;
+}
+
+@media all and (max-width: 992px){
+	
+	footer{
+		display: flex;
+		flex-direction: column;
+		width: fit-content;
+}
