@@ -9,11 +9,11 @@ body {
     font-family: 'Raleway', sans-serif, Arial, sans-serif;
 }
 
-#pri{
+main{
 	width: 992px;
 	margin: auto;
 }	
-
+																				/*Header*/
 header{
 	display: flex;
 	justify-content: space-between;
@@ -47,6 +47,7 @@ header nav li{
 	margin-left: 20px;
 	margin-right: 20px;
 }
+																			/*Fin Header*/
 
 																			/*Accroche*/
 
@@ -135,6 +136,11 @@ button{
 	height: 30px;
 }
 
+a.bouton:hover{
+	box-shadow: #0065FC 5px 5px 15px;
+	transition: 0.6s;
+}
+
 .imgco{
 	display: flex;
 	justify-content: center;
@@ -146,6 +152,7 @@ button{
 	width: 30px;
 	height: 30px;
 }
+
 																		/*Fin Partie Filtre*/				
 
 #loge{
@@ -172,14 +179,15 @@ button{
 	margin-left: 5px;
 }
 
-																		/*Section 1*/	
+																			/*Section 1*/	
 #part1{
 	display: flex;
 	justify-content: space-between;
 	margin-bottom: 20px;
 	
 }
-																			/*Bloc "Hébergement à Marseille"*/																	
+
+																	/*Bloc "Hébergement à Marseille"*/																	
 #blocheb{
 	display: flex;
     flex-flow: row wrap;
@@ -201,7 +209,7 @@ button{
 .hotelheb{
 	display: flex;
 	flex-flow: row wrap;
-	align-items: center;
+	align-items: flex-start;
 	background-color: white;
 	width: 210px;
 	height: 150px;
@@ -210,13 +218,11 @@ button{
 }
 
 .hotelheb img{
-	display: flex;
 	margin: auto;
 	width: 95%;
 	height: 70px;
 	object-fit: cover;
 	border-radius: 10px 10px 0px 0px;
-	margin: auto;
 }
 
 .textheb{
@@ -241,10 +247,16 @@ button{
 
 }
 
-																		/* Fin Bloc "Hébergement à Marseille"*/
+																/* Fin Bloc "Hébergement à Marseille"*/
 
+																			/* Gestion lien a"*/
+a{
+	text-decoration: none;
+	color: black;
+}
+																		/* Fin Gestion lien a"*/
 
-																		/*Bloc "Les plus populaires"*/	
+																	/*Bloc "Les plus populaires"*/	
 #blocpopu{
 	display: flex;
 	flex-direction: column;
@@ -303,33 +315,30 @@ button{
 	margin-top: auto;
 	margin-bottom: 20px;
 }
-																		/*Fin Bloc "Les plus populaires"*/
+																/*Fin Bloc "Les plus populaires"*/
 
-																		/*Etoile*/
+																				/*Etoile*/
 .bluestars{
 	color: #0065FC;
 	font-size: 0.6em;
 	margin-top: px;
 }
-
 .greystars{
 	color: lightgrey;
 	font-size: 1em;
 	margin-top: px;
 }
-																		/* Fin Etoile*/
+																			/* Fin Etoile*/
 
 																		/*Fin Bloc "Les plus populaires"*/	
 
-																		/*Fin Section 1*/	
+																			/*Fin Section 1*/	
 
-
+																			/* Section 2*/
 
 #part2 h4{
 	margin-bottom: 1%;
 	}
-
-
 
 .portrait{
 	display: flex;
@@ -377,8 +386,9 @@ table{
 	margin-bottom: 3%;
 }
 
+																		/*Fin Section 2*/
 
-
+																			/*Footer*/
 footer{
 	display: flex;
 	justify-content: space-between;
@@ -397,7 +407,7 @@ footer nav ul{
 footer nav li{
 	margin-right: 20px;
 	margin-top: 15px ;
-	}
+}
 
 footer h3{
 	margin-top: 5px;
@@ -408,11 +418,13 @@ footer nav a{
 	color: black;
 	text-decoration: none;
 }
+																		/*Fin Footer*/
 
+																		/*mediaQueries*/																	
 @media all and (max-width: 992px){
-	
 	footer{
 		display: flex;
 		flex-direction: column;
 		width: fit-content;
+	}
 }
