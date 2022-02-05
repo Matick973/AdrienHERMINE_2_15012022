@@ -203,7 +203,7 @@ a.bouton:hover{
 	margin-left: 5px;
 }
 
-#logoinfo{
+#logo-info{
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -224,7 +224,7 @@ a.bouton:hover{
 	flex-wrap: nowrap;
 	justify-content: space-between;
 	align-content: stretch;
-	max-width: auto;
+	width: auto;
 	margin: auto;
 	padding:5px
 }
@@ -257,12 +257,12 @@ a.bouton:hover{
 	margin-left: 15px;
 }
 
-.greystars{
+.grey-stars{
 	color: lightgrey;
 	font-size: 1em;
 }
 
-.bluestars{
+.blue-stars{
 	font-size: 0.7em;
 	color: #0065FC;
 	margin: 0px 0px 0px 10px;
@@ -324,7 +324,7 @@ a.bouton:hover{
 
 																				/*column Setting "Les plus Populaires*/
 	
-#titre-popu {
+#title-popu {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
