@@ -6,136 +6,168 @@
 }
 
 body {
+	max-width: 1080px;
+	margin: auto;
     font-family: 'Raleway', sans-serif, Arial, sans-serif;
 }
 
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: normal;
+  	padding: 10px;
+
+}
+
 main{
-	width: 992px;
+	width: auto;
 	margin: auto;
 }	
-																				/*Header*/
-header{
-	display: flex;
-	justify-content: space-between;
+
+
+																					/*Header*/
+
+						
+#logo {
+  	display: flex;
+	width: 100px;  
 	align-items: center;
-	padding: 5px;
 }
-
+																					
 #logo img{
-	width: 120px;
-	height: auto;
-	margin-left: 15%;
-}
-
-#logo{
-	display: flex
+  	display: flex;
+	width: 100px;
 }
 
 #menu{
-	display: inline-flex;
+	display: flex;
+  	flex-direction: row;
+  	flex-wrap: nowrap;
+  	justify-content: flex-end;
+	margin: 20px;
 }
 
-#heb p{
+.navlink {
+	display: flex;
+	min-width: 100px;
+	align-items: center;
+	justify-content: center;
+}
+
+.navlink:hover{
+	border-top: #0065FC solid 2px;
 	color: #0065FC;
-	font-weight: 700;
-	font-size: 13px;
-	padding: 18px;
-	border-top: #0065FC solid 1px;
 }
 
-#acti{
-	font-size: 13px;
-	padding: 18px;
+.navlink:hover p{
+	color: #0065FC;
 }
 
 
-																			/*Fin Header*/
+#menu a{
+	text-decoration: none;
+	font-size: 0.75em;
+	color: black;
+	text-align: center;
+}
 
-																			/*Accroche*/
+																				/*Elements du Sub-Header*/
 
-#textbloc{
+.sub-header {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
-	}
-
-#textbloc h4{
-	margin-bottom: 0px;
-	
+	align-content: stretch;
+	padding-left: 5px;
 }
 
-#textbloc p{
-	margin-top: 5px;
-	font-size: 13px;
+																		/*MISE en PAGE Elements du Sub-Header*/
+.texte p {
+	font-size: 0.75em;
+	margin-top: 0px;
 }
 
-																			/*Fin Accroche*/
+.texte h4 {
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
 
-#recherche{
-	width: 30%;
-	flex-flow: column nowrap;
-	font-weight: bold;
-	}
+																				/*Bouton Rechercher*/
 form{
 	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: nowrap;
 	height: 40px;
-	margin-left: 5px;
 	margin-bottom: 10px;
-	
 }
+
 form label{
 	display: flex;
-	min-width: 50px;
+	min-width: 40px;
 	height: 40px;
 	justify-content: center;
 	align-items: center;
 	background-color: #F2F2F2;
-	border-radius: 30% 0% 0% 30%;
+	border-radius: 10px 0% 0% 10px;
 }
-button{
+
+#rechercher{
+	border: none;
+	padding: 10px;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif, Arial, sans-serif;
+}
+
+#bouton-rechercher{
 	background-color: #0065FC;
 	color: white;
 	padding: 12px;
 	border: #0065FC;
 	border-radius: 0px 10px 10px 0px;
-	font-family: 'Raleway', sans-serif, Arial, sans-serif;
-
+	font-family: 'Raleway', sans-serif, Arial, sans-serif;	
 }
 
-#rechercher{
-	display: flex;
-	border: none;
-	font-weight: bold;
-	margin-left: 7px;
-	font-family: 'Raleway', sans-serif, Arial, sans-serif;
+#bouton-loupe{
+	display: none;
+	color: white;
+	padding: 12px;
+	border-radius: 10px 10px 10px 10px;
 }
 
+																						/*Filtres*/
 
-																		/*Partie Filtre*/
 #filtres{
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px;
-	width: 75%;
-	height: 30px;
+ 	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: flex-start;
+  	align-items: center;
+ 	align-content: normal;
 }
 
 #filtres p{
 	font-weight: bold;
 	font-size: 0.9em;
 	margin: 5px 10px 5px 10px;
-	
+}
+
+#filtres a{
+	text-decoration: none;
+	color: black;
 }
 
 .bouton{
 	display: flex;
+	position: relative;
+	padding-left: 28px;
 	justify-content: center;
 	align-items: center;
+	background-color: white;
 	border: lightgray solid 1px;
 	border-radius: 45px;
 	margin: 5px 10px 5px 10px;
-	height: 30px;
 }
 
 a.bouton:hover{
@@ -145,23 +177,30 @@ a.bouton:hover{
 
 .imgco{
 	display: flex;
+	position: absolute;
+	left: -0.1em;
 	justify-content: center;
 	align-items: center;
 	color: #0065FC;
 	background-color: #DEEBFF;
-	border-radius: 15px;
+	border-radius: 45px;
 	margin: auto;
-	width: 30px;
-	height: 30px;
+	width: 33px;
+	height: 33px;
+	overflow:visible;
 }
 
-																		/*Fin Partie Filtre*/				
+																						/*Texte Info*/
 
-#loge{
+#info {
 	display: flex;
-	flex-direction: row;
 	align-items: center;
-	margin-left: 15px;
+	align-content: normal;
+
+}
+#info p {
+	font-size: 0.75em;
+	margin-left: 5px;
 }
 
 #logoinfo{
@@ -169,231 +208,312 @@ a.bouton:hover{
 	justify-content: center;
 	align-items: center;
 	color: #0065FC;
-	border-radius: 45px;
 	border: lightgray solid 0.8px;
     width: 17px;
     height: 17px;
+	border-radius: 45px;
     font-size: 10px;
 }
 
-#loge p{
-	font-size: 12px;
-	margin-left: 5px;
-}
 
-																			/*Section 1*/	
-#part1{
+																				/*Part 1 General Setting*/
+
+#part-one {
 	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
 	justify-content: space-between;
-	margin-bottom: 20px;
-	
-}
-
-																	/*Bloc "Hébergement à Marseille"*/																	
-#blocheb{
-	display: flex;
-    flex-flow: row wrap;
-	justify-content: space-between;
-	background-color: #F2F2F2;
-	width: 69%;
-	border-radius: 10px;
-	padding: 10px;
-}
-
-#titreheb{
-	display: flex;
-	margin-top: 0px;
-	margin-bottom: 0px;
-	width: 90%;
-	margin-bottom: -10px;
-}
-
-.hotelheb{
-	display: flex;
-	flex-flow: row wrap;
-	align-items: flex-start;
-	background-color: white;
-	width: 210px;
-	height: 150px;
-	border-radius: 10px;
-	box-shadow : 3px 3px 2px lightgray;
-}
-
-.hotelheb img{
+	align-content: stretch;
+	max-width: auto;
 	margin: auto;
-	width: 95%;
-	height: 70px;
-	object-fit: cover;
-	border-radius: 10px 10px 0px 0px;
+	padding:5px
 }
 
-.textheb{
+.container:nth-child(1) {
 	display: flex;
 	flex-direction: column;
-	margin-left: 10px;
-	}
-
-.textheb h5{
-	margin-top: 0px;
-	margin-bottom: 0px;
+	width: 68%;
+	background-color: #f2f2f2;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+  
+.container:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+	background-color: #f2f2f2;
+	border-radius: 15px;
+	box-sizing: border-box;
 }
 
-.textheb p{
-	font-size: 0.7em;
-	margin: 2px;
-}
-
-#blocheb h5{
-	margin-top: auto;
-	margin-bottom: auto;
-
-}
-
-																/* Fin Bloc "Hébergement à Marseille"*/
-
-																			/* Gestion lien a"*/
-a{
+#part-one a {
 	text-decoration: none;
 	color: black;
 }
-																		/* Fin Gestion lien a"*/
 
-																	/*Bloc "Les plus populaires"*/	
-#blocpopu{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	background-color: #F2F2F2;
-	width: 27%;
-	height: 410px;
-	border-radius: 10px 0px 0px 10px;
+#part-one h4 {
+	margin-left: 15px;
 }
 
-#titrepopu{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	width: 90%;
-	margin-bottom: -40px;
-	}
-
-.hotelpopu{
-	display: flex;
-	align-items: center;
-	background-color: white;
-	width: 225px;
-	height: 90px;
-	border-radius: 10px;
-	box-shadow : 3px 3px 2px lightgray;
-	}
-
-.hotelpopu img{
-	display: flex;
-	margin-left: 5px;
-	width: 80px;
-	height: 80px;
-	object-fit: cover;
-	border-radius: 10% 0% 0% 10%;
-
-}
-
-.textpopu{
-	display: flex;
-	flex-direction: column;
-	align-content: center;
-	margin-left: 10px;
-	margin-top: 0px;
-}
-
-.textpopu h5{
-	font-size: 0.8em;
-	margin-top: 0px;
-	margin-bottom: auto;
-}
-
-.textpopu p{
-	font-size: 0.7em;
-	margin-top: auto;
-	margin-bottom: 20px;
-}
-																/*Fin Bloc "Les plus populaires"*/
-
-																				/*Etoile*/
-.bluestars{
-	color: #0065FC;
-	font-size: 0.6em;
-}
 .greystars{
 	color: lightgrey;
 	font-size: 1em;
 }
-																			/* Fin Etoile*/
 
-																		/*Fin Bloc "Les plus populaires"*/	
+.bluestars{
+	font-size: 0.7em;
+	color: #0065FC;
+	margin: 0px 0px 0px 10px;
+}
 
-																			/*Fin Section 1*/	
+																				/*Part 1 General Setting*/
 
-																			/* Section 2*/
+																				/*lines Setting "Hébergement"*/																			
+.heb-line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: normal;
+  
+}
 
-#part2 h4{
-	margin-bottom: 1%;
-	}
+.card-heb {
+  	display: block;
+  	min-width: 210px;
+	height: 160px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
+	margin-bottom: 3%;	
+}
 
-.portrait{
+.card-heb img{
+	width: 95%;
+	height: 55%;
+	margin: 5px;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.card-text-heb h6{
+	font-size: 0.7em;
+	margin: 1px 0px 0px 10px;
+
+}
+.card-text-heb p{
+	font-size: 0.7em;
+	margin: 0px 0px 0px 10px;
+	
+}
+
+.card-heb:hover{
+	border: #0065FC;
+	box-shadow: #0065FC 5px 5px 15px;
+	transition: 0.6s;
+}
+
+#afficher-plus{
+	margin-left: 3%;
+}
+
+																				/*lines Setting "Hébergement"*/
+
+																				/*column Setting "Les plus Populaires*/
+	
+#titre-popu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+}																				
+
+.card-popu{
+	display: flex;
+  	flex-direction: row;
+  	flex-wrap: nowrap;
+	align-items: center;
+	box-sizing: border-box;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
+	margin: auto;
+	width: 250px;
+	height: 110px;
+	
+}
+
+.card-popu a{
+	display: flex;
+	box-sizing: content-box;
+}
+
+.card-popu img{
+	box-sizing: border-box;
+	border-radius: 15px 0px 0px 15px;
+	width: 110px;
+	height: 110px;
+	padding: 5px;
+	object-fit: cover;
+}
+
+.card-text-popu{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	margin: 10px 5px 0px 0px;
+}
+.card-text-popu p{
+	font-size: 0.7em;
+	margin: 1px 0px 20% 10px;
+}
+.card-text-popu h6{
+	margin: 1px 0px 0px 10px;
+}
+
+.card-popu:hover{
+	border: #0065FC;
+	box-shadow: #0065FC 5px 5px 15px;
+	transition: 0.6s;
+}
+
+																				/*column Setting "Les plus Populaires*/																				
+
+																				/*Part 2 General Setting*/
+
+
+#part-two {
 	display: flex;
 	flex-direction: column;
-	width: 225px;
-	margin: auto;
-	border-radius: 10px;
-	box-shadow: 3px 3px 2px lightgrey;
-	background-color: white ;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: stretch;
+	width: auto;
 }
 
-.portrait img{
+#part-two a {
+	text-decoration: none;
+	color: black;
+}
+
+#part-two h4 {
+	margin-left: 15px;
+}
+
+#part-two h5 {
+	margin: auto 15px;
+}
+																				/*Part 2 General Setting*/
+
+
+																				/*IMAGEEEEEEEE Settings*/
+
+.column-container {
 	display: flex;
-	width: 225px;
-	height: 260px;
-	object-fit: cover;
-	border-radius: 10px 10px 0px 0px;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	height: 350px;
+}
+ 
+
+.column-portrait {
+	display: flex;
+	width: 22%;
 }
 
-.paysage{
+.column-paysage {
+	display: flex;
+	justify-content: space-between;
+	width: 24%;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+
+.bloc-portrait{
 	display: flex;
 	flex-direction: column;
-	width: 225px;
-	margin: auto;
-	border-radius: 10px;
-	box-shadow: 3px 3px 2px lightgrey;
-	background-color: white ;
-}
-
-.paysage img{
-	display: flex;
-	width: 225px;
-	height: 100px;
-	object-fit: cover;
-	border-radius: 10px 10px 0px 0px;
-}
-
-table h5{
-	margin: 10px 10px 10px 10px;
-}
-
-table{
-	margin: auto;
 	width: 100%;
-	margin-bottom: 3%;
+	height: 350px;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
 }
 
-																		/*Fin Section 2*/
+.bloc-portrait img{
+	width: 100%;
+	height: 88%;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;
+}
 
-																			/*Footer*/
+
+.bloc-paysage-one img{
+	width: 100%;
+	height: 78%;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.bloc-paysage-one:nth-child(1){
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-height: 190px;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
+}
+
+.bloc-paysage-one:nth-child(2){
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-height: 123px;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
+}
+
+
+.bloc-paysage-two img{
+	width: 100%;
+	height: 75%;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.bloc-paysage-two:nth-child(1){
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-height: 160px;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
+}
+
+.bloc-paysage-two:nth-child(2){
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-height: 160px;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
+}
+
+
+
+/*IMAGEEEEEEEE Portrait*/
+
+
+																				/*Footer*/
 footer{
 	display: flex;
 	justify-content: space-between;
 	background-color: #F2F2F2;
 	padding: 10px 10px 10px 20px;
+	margin-top: 20px;
 }
 
 .fposition {
@@ -422,130 +542,6 @@ footer nav a{
 	color: black;
 	text-decoration: none;
 }
-																		/*Fin Footer*/
+																			/*Footer*/
 
-																		/*mediaQueries*/																	
-@media all and (max-width: 992px){
-	
-	main{
-		width: auto;
-	}	
-
-	header{
-		display: flex;
-		flex-direction: column;
-	}
-	
-	#section1{
-		display: flex;
-		flex-direction: column;
-	}
-
-
-	#textbloc{
-		display: flex;
-		flex-direction: column;
-		width: auto;
-		}
-	
-	#textbloc h4{
-		text-align: center;
-		margin: auto;
-	}
-	
-	#textbloc p{
-		text-align: center;
-	}
-	
-	#recherche{
-		width: auto;
-	}
-	
-	form {
-		display: flex;
-		width: auto;
-		justify-content: center;
-		align-items: center;
-	}
-	
-	#filtres{
-		display: flex;
-		flex-flow: row wrap;
-		width: auto;
-		align-items: center;
-		
-	}
-	
-	#loge{
-		display:flex;
-		align-items: center;
-		width: auto;
-	}
-
-	#part1{
-		display: flex;
-		width: auto;
-		justify-content: center;
-		flex-direction: row-reverse;
-		flex-wrap: wrap-reverse;
-		
-		
-	}
-
-	#titrepopu{
-		
-		display: flex;
-		width:90%;
-	}
-
-	#blocpopu{
-		display: flex;
-		flex-direction: raw;
-		justify-content: space-around;
-		align-items: center;
-		width: 90%;
-		border-radius: 0;
-	}
-	
-	#blocheb{
-		display: flex;
-		margin: auto;
-		width: auto;
-		background-color: white;
-	}
-		
-	.hotelpopu{
-		display: flex;
-		align-items: center;
-		background-color: white;
-		width: 80%;
-		height: 90px;
-	}
-	
-	#part2{
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-	}
-
-	table{
-		display: inline-table;
-
-		width: auto;
-	
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	footer{
-		display: flex;
-		flex-direction: column;
-		width:auto;
-		align-content: center;
-	}
-}
+																		/*mediaQueries (voir fichier "autre-resolution)*/
