@@ -1,0 +1,543 @@
+@font-face {
+	font-family: 'Raleway';
+	src: url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap);
+	font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	max-width: 1080px;
+	margin: auto;
+    font-family: 'Raleway', sans-serif, Arial, sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: stretch;
+	align-content: normal;
+  	padding: 10px;
+
+}
+
+main{
+	width: auto;
+	margin: auto;
+}	
+
+																					/*Header*/
+
+						
+#logo {
+  	display: flex;
+	width: 100px;  
+	align-items: center;
+}
+																					
+#logo img{
+  	display: flex;
+	width: 100px;
+}
+
+#menu{
+	display: flex;
+  	flex-direction: row;
+  	flex-wrap: nowrap;
+  	justify-content: flex-end;
+	margin: 20px;
+}
+
+.navlink {
+	display: flex;
+	min-width: 100px;
+	align-items: center;
+	justify-content: center;
+}
+
+.navlink:hover{
+	border-top: #0065FC solid 2px;
+	color: #0065FC;
+}
+
+.navlink:hover p{
+	color: #0065FC;
+}
+
+
+#menu a{
+	text-decoration: none;
+	font-size: 0.75em;
+	color: black;
+	text-align: center;
+}
+
+																				/*Elements du Sub-Header*/
+
+.sub-header {
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	padding-left: 5px;
+}
+
+																		/*MISE en PAGE Elements du Sub-Header*/
+.texte p {
+	font-size: 0.75em;
+	margin-top: 0px;
+}
+
+.texte h4 {
+	margin-bottom: 5px;
+	margin-top: 0px;
+}
+
+																				/*Bouton Rechercher*/
+form{
+	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: nowrap;
+	height: 40px;
+	margin-bottom: 10px;
+}
+
+form label{
+	display: flex;
+	min-width: 40px;
+	height: 40px;
+	justify-content: center;
+	align-items: center;
+	background-color: #F2F2F2;
+	border-radius: 10px 0% 0% 10px;
+}
+
+#rechercher{
+	border: none;
+	padding: 10px;
+	font-weight: bold;
+	font-family: 'Raleway', sans-serif, Arial, sans-serif;
+}
+
+#bouton-rechercher{
+	background-color: #0065FC;
+	color: white;
+	padding: 12px;
+	border: #0065FC;
+	border-radius: 0px 10px 10px 0px;
+	font-family: 'Raleway', sans-serif, Arial, sans-serif;	
+}
+
+#bouton-loupe{
+	display: none;
+	color: white;
+	padding: 12px;
+	border-radius: 10px 10px 10px 10px;
+}
+
+																						/*Filtres*/
+
+#filtres{
+	display: flex;
+ 	flex-direction: row;
+  	flex-wrap: wrap;
+  	justify-content: flex-start;
+  	align-items: center;
+ 	align-content: normal;
+}
+
+#filtres p{
+	font-weight: bold;
+	font-size: 0.9em;
+	margin: 5px 10px 5px 10px;
+}
+
+#filtres a{
+	text-decoration: none;
+	color: black;
+}
+
+.bouton{
+	display: flex;
+	position: relative;
+	padding-left: 28px;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border: lightgray solid 1px;
+	border-radius: 45px;
+	margin: 5px 10px 5px 10px;
+}
+
+a.bouton:hover{
+	box-shadow: #0065FC 5px 5px 15px;
+	transition: 0.6s;
+}
+
+.imgco{
+	display: flex;
+	position: absolute;
+	left: -0.1em;
+	justify-content: center;
+	align-items: center;
+	color: #0065FC;
+	background-color: #DEEBFF;
+	border-radius: 45px;
+	margin: auto;
+	width: 33px;
+	height: 33px;
+	overflow:visible;
+}
+
+																						/*Texte Info*/
+
+#info {
+	display: flex;
+	align-items: center;
+	align-content: normal;
+
+}
+#info p {
+	font-size: 0.75em;
+	margin-left: 5px;
+}
+
+#logo-info{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #0065FC;
+	border: lightgray solid 0.8px;
+    width: 17px;
+    height: 17px;
+	border-radius: 45px;
+    font-size: 10px;
+}
+
+
+																				/*Part 1 General Setting*/
+
+#part-one {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-content: stretch;
+	width: auto;
+	margin: auto;
+	padding:5px
+}
+
+.container:nth-child(1) {
+	display: flex;
+	flex-direction: column;
+	width: 68%;
+	background-color: #f2f2f2;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+  
+.container:nth-child(2) {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 30%;
+	background-color: #f2f2f2;
+	border-radius: 15px;
+	box-sizing: border-box;
+}
+
+#part-one a {
+	text-decoration: none;
+	color: black;
+}
+
+#part-one h4 {
+	margin-left: 15px;
+}
+
+.grey-stars{
+	color: lightgrey;
+	font-size: 1em;
+}
+
+.blue-stars{
+	font-size: 0.7em;
+	color: #0065FC;
+	margin: 0px 0px 0px 10px;
+}
+
+																				/*Part 1 General Setting*/
+
+																				/*lines Setting "Hébergement"*/																			
+.heb-line {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: normal;
+  
+}
+
+.card-heb {
+  	display: block;
+  	min-width: 210px;
+	height: 160px;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
+	margin-bottom: 3%;	
+}
+
+.card-heb img{
+	width: 95%;
+	height: 55%;
+	margin: 5px;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.card-text-heb h6{
+	font-size: 0.7em;
+	margin: 1px 0px 0px 10px;
+
+}
+.card-text-heb p{
+	font-size: 0.7em;
+	margin: 0px 0px 0px 10px;
+	
+}
+
+.card-heb:hover{
+	border: #0065FC;
+	box-shadow: #0065FC 5px 5px 15px;
+	transition: 0.6s;
+}
+
+#afficher-plus{
+	margin-left: 3%;
+}
+
+																				/*lines Setting "Hébergement"*/
+
+																				/*column Setting "Les plus Populaires*/
+	
+#title-popu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+}																				
+
+.card-popu{
+	display: flex;
+  	flex-direction: row;
+  	flex-wrap: nowrap;
+	align-items: center;
+	box-sizing: border-box;
+	background-color: white;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
+	margin: auto;
+	width: 250px;
+	height: 110px;
+	
+}
+
+.card-popu a{
+	display: flex;
+	box-sizing: content-box;
+}
+
+.card-popu img{
+	box-sizing: border-box;
+	border-radius: 15px 0px 0px 15px;
+	width: 110px;
+	height: 110px;
+	padding: 5px;
+	object-fit: cover;
+}
+
+.card-text-popu{
+	display: flex;
+	align-items: flex-start;
+	flex-direction: column;
+	margin: 10px 5px 0px 0px;
+}
+.card-text-popu p{
+	font-size: 0.7em;
+	margin: 1px 0px 20% 10px;
+}
+.card-text-popu h6{
+	margin: 1px 0px 0px 10px;
+}
+
+.card-popu:hover{
+	border: #0065FC;
+	box-shadow: #0065FC 5px 5px 15px;
+	transition: 0.6s;
+}
+
+																				/*column Setting "Les plus Populaires*/																				
+
+																				/*Part 2 General Setting*/
+
+
+#part-two {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-content: stretch;
+	width: auto;
+}
+
+#part-two a {
+	text-decoration: none;
+	color: black;
+}
+
+#part-two h4 {
+	margin-left: 15px;
+}
+
+#part-two h5 {
+	margin: auto 15px;
+}
+																				/*Part 2 General Setting*/
+
+
+																				/*IMAGEEEEEEEE Settings*/
+
+.column-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	height: 350px;
+}
+ 
+
+.column-portrait {
+	display: flex;
+	width: 22%;
+}
+
+.column-paysage {
+	display: flex;
+	justify-content: space-between;
+	width: 24%;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+
+.bloc-portrait{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 350px;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
+}
+
+.bloc-portrait img{
+	width: 100%;
+	height: 88%;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.bloc-paysage-one img{
+	width: 100%;
+	height: 78%;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.bloc-paysage-one:nth-child(1){
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-height: 190px;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
+}
+
+.bloc-paysage-one:nth-child(2){
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-height: 123px;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
+}
+
+
+.bloc-paysage-two img{
+	width: 100%;
+	height: 75%;
+	object-fit: cover;
+	border-radius: 15px 15px 0px 0px;
+}
+
+.bloc-paysage-two:nth-child(1){
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-height: 160px;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
+}
+
+.bloc-paysage-two:nth-child(2){
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-height: 160px;
+	border-radius: 15px;
+	box-shadow: lightgray 3px 3px 2px;
+}
+
+/*IMAGEEEEEEEE Portrait*/
+
+
+																				/*Footer*/
+footer{
+	display: flex;
+	justify-content: space-between;
+	background-color: #F2F2F2;
+	padding: 10px 10px 10px 20px;
+	margin-top: 20px;
+}
+
+.footer-bloc {
+	width: 100%;
+}
+
+footer nav ul{
+	display: flex;
+	flex-direction: column;
+	list-style-type: none;
+	padding: 0px;
+	margin-top: 0%;
+}
+
+footer nav li{
+	font-size: 0.9em;
+	margin-top: 15px ;
+}
+
+footer h5{
+	
+	margin-bottom: 0px;
+
+}
+footer nav a{
+	color: black;
+	text-decoration: none;
+}
+																			/*Footer*/
+
+																		/*mediaQueries (voir fichier "autre-resolution)*/
