@@ -3,11 +3,10 @@
    
     .card-popu{
         width: 220px;
-        margin: 15px;
+        margin: 30px;
     }
 
 }
-
 
 /* Nouvelles règles si la fenêtre fait au plus 768px de large */
 @media screen and (max-width: 768px){
@@ -212,13 +211,12 @@
 
 
 	footer{
-        display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
         width: auto;
 	}
 
-    .fposition {
+    .footer-bloc {
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;

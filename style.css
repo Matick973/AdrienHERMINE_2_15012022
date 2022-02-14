@@ -27,7 +27,6 @@ main{
 	margin: auto;
 }	
 
-
 																					/*Header*/
 
 						
@@ -450,7 +449,6 @@ a.bouton:hover{
 	border-radius: 15px 15px 0px 0px;
 }
 
-
 .bloc-paysage-one img{
 	width: 100%;
 	height: 78%;
@@ -502,8 +500,6 @@ a.bouton:hover{
 	box-shadow: lightgray 3px 3px 2px;
 }
 
-
-
 /*IMAGEEEEEEEE Portrait*/
 
 
@@ -516,7 +512,7 @@ footer{
 	margin-top: 20px;
 }
 
-.fposition {
+.footer-bloc {
 	width: 100%;
 }
 
