@@ -38,6 +38,12 @@
         color: #0065FC;
     }
 
+    .navlink--current{
+        border-top: none;
+        border-bottom: #0065FC solid 2px;
+    }
+    
+
     .sub-header {
         display: flex;
         flex-wrap: nowrap;
@@ -130,7 +136,7 @@
 
     .column-portrait {
         display: flex;
-      
+        width: auto;
     }
     
     .column-paysage {
