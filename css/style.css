@@ -159,7 +159,7 @@ form label{
 	font-weight: bold;
 	font-size: 0.9em;
 	margin: 5px 10px 5px 12px;
-	padding: 3px;
+	padding: 6px;
 }
 
 #filtres a{
@@ -194,8 +194,8 @@ a.bouton:hover{
 	background-color: #DEEBFF;
 	border-radius: 45px;
 	margin: auto;
-	width: 36px;
-	height: 36px;
+	width: 41px;
+	height: 41px;
 	overflow:visible;
 }
 
@@ -247,7 +247,6 @@ a.bouton:hover{
 	background-color: #f2f2f2;
 	border-radius: 15px;
 	box-sizing: border-box;
-	padding: 1%;
 }
   
 .container:nth-child(2) {
@@ -258,7 +257,6 @@ a.bouton:hover{
 	background-color: #f2f2f2;
 	border-radius: 15px;
 	box-sizing: border-box;
-	padding: 1%;
 }
 
 #part-one a {
@@ -345,7 +343,7 @@ a.bouton:hover{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 90%;
+	width: 82%;
 }																				
 
 .card-popu{
@@ -357,8 +355,8 @@ a.bouton:hover{
 	background-color: white;
 	border-radius: 15px;
 	box-shadow: lightgray 3px 3px 2px;
-	margin: auto;
-	width: 250px;
+	margin-bottom: auto;
+	width: 260px;
 	height: 110px;
 	
 }
@@ -433,7 +431,7 @@ a.bouton:hover{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	height: 350px;
 }
  
