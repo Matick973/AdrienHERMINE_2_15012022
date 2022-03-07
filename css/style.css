@@ -25,6 +25,7 @@ header {
 main{
 	width: auto;
 	margin: auto;
+	
 }	
 
 																					/*Header*/
@@ -45,8 +46,10 @@ main{
 	display: flex;
   	flex-direction: row;
   	flex-wrap: nowrap;
-  	justify-content: flex-end;
+  	justify-content: space-between;
 	margin: 20px;
+	font-weight: 600;
+	width: 20%;
 }
 
 .navlink {
@@ -93,11 +96,11 @@ main{
 
 																		/*MISE en PAGE Elements du Sub-Header*/
 .texte p {
-	font-size: 0.75em;
+	font-size: 85%;
 	margin-top: 0px;
 }
 
-.texte h4 {
+.texte h3 {
 	margin-bottom: 5px;
 	margin-top: 0px;
 }
@@ -107,7 +110,7 @@ form{
 	display: flex;
  	flex-direction: row;
   	flex-wrap: nowrap;
-	height: 40px;
+	height: px;
 	margin-bottom: 10px;
 }
 
@@ -210,8 +213,8 @@ a.bouton:hover{
 
 }
 #info p {
-	font-size: 0.75em;
-	margin-left: 5px;
+	font-size: 90%;
+	margin-left: 10px;
 }
 
 #logo-info{
@@ -220,12 +223,11 @@ a.bouton:hover{
 	align-items: center;
 	color: #0065FC;
 	border: lightgray solid 0.8px;
-    width: 17px;
-    height: 17px;
+    width: 20px;
+    height: 20px;
 	border-radius: 45px;
     font-size: 10px;
 }
-
 
 																				/*Part 1 General Setting*/
 
@@ -276,7 +278,7 @@ a.bouton:hover{
 .blue-stars{
 	font-size: 0.7em;
 	color: #0065FC;
-	margin: 0px 0px 0px 10px;
+	margin: 0px 0px 0px 0px;
 }
 
 																				/*Part 1 General Setting*/
@@ -295,32 +297,46 @@ a.bouton:hover{
 }
 
 .card-heb {
-  	display: block;
-  	min-width: 200px;
+  	display: flex;
+	flex-direction: column;
+  	width: 200px;
 	height: 160px;
 	background-color: white;
 	border-radius: 15px;
-	box-shadow: lightgray 3px 3px 2px;
+	box-shadow: lightgray 3px 4px 10px;
 	margin-bottom: 3%;	
 }
 
-.card-heb img{
-	width: 97%;
-	height: 55%;
-	margin: 3px;
+
+.img-sizing-heb img{
+	width: 96%;
+	height: 100%;
 	object-fit: cover;
 	border-radius: 15px 15px 0px 0px;
 }
 
+.img-sizing-heb{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 55%;
+	padding-top: 2%;
+}
+
+.card-text-heb{
+	height: 35%;
+	margin: 4%;
+}
+
 .card-text-heb h6{
-	font-size: 0.7em;
-	margin: 1px 0px 0px 10px;
+	font-size: 73%;
+	margin: 0px 0px 0px 0px;
 	margin-bottom: 2%;
 
 }
 .card-text-heb p{
-	font-size: 0.7em;
-	margin: 0px 0px 0px 10px;
+	font-size: 70%;
+	margin: 0px 0px 0px 0px;
 	margin-bottom: 2%;
 	
 }
@@ -332,7 +348,8 @@ a.bouton:hover{
 }
 
 #afficher-plus{
-	margin-left: 4%;
+	margin-left: 5%;
+	text-align: left;
 }
 
 																				/*lines Setting "Hébergement"*/
@@ -343,7 +360,7 @@ a.bouton:hover{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 82%;
+	width: 85%;
 }																				
 
 .card-popu{
@@ -351,43 +368,49 @@ a.bouton:hover{
   	flex-direction: row;
   	flex-wrap: nowrap;
 	align-items: center;
+	justify-content: space-evenly;
 	box-sizing: border-box;
 	background-color: white;
 	border-radius: 15px;
-	box-shadow: lightgray 3px 3px 2px;
+	box-shadow: lightgray 3px 4px 10px;
 	margin-bottom: auto;
 	width: 260px;
 	height: 110px;
-	
 }
 
-.card-popu a{
-	display: flex;
-	box-sizing: content-box;
-}
-
-.card-popu img{
+.img-sizing img{
 	box-sizing: border-box;
-	border-radius: 15px 0px 0px 15px;
-	width: 110px;
-	height: 110px;
-	padding: 5px;
 	object-fit: cover;
+	border-radius: 15px 0px 0px 15px;
+	width: 94%;
+	height: 100px;
+}
+
+.img-sizing{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
 }
 
 .card-text-popu{
 	display: flex;
+	width: 60%;
 	align-items: flex-start;
 	flex-direction: column;
-	margin: 10px 5px 0px 0px;
+	margin-left: 3%;
 }
-.card-text-popu p{
-	font-size: 0.7em;
-	margin: 4px 10px 22px 10px;
-}
+
 .card-text-popu h6{
-	margin: 1px 0px 0px 10px;
+	font-size: 73%;
+	margin: 0px 0px 2px 0px ;
 }
+
+.card-text-popu p{
+	font-size: 70%;
+	margin: 0px 0px 35px 0px;
+}
+
 
 .card-popu:hover{
 	border: #0065FC;
@@ -395,134 +418,114 @@ a.bouton:hover{
 	transition: 0.6s;
 }
 
-																				/*column Setting "Les plus Populaires*/																				
-
-																				/*Part 2 General Setting*/
 
 
-#part-two {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: center;
-	align-content: stretch;
-	width: auto;
-	margin-top: 1%;
-}
 
-#part-two a {
+#mosaik a {
 	text-decoration: none;
 	color: black;
 }
 
-#part-two h4 {
-	margin-left: 15px;
+#mosaik h5 {
+	margin:5%
 }
 
-#part-two h5 {
-	margin: auto 15px;
+#activite{
+	margin-left: 1%;
+    }
+
+#mosaik {
+  	display: grid;
+	position: relative;
+  	grid-auto-flow: column dense; 
+  	grid-template-columns: 1fr 1fr 1fr 1fr; 
+  	grid-template-rows: 170px 170px; 
+  	grid-gap: 30px; 
+  	grid-template-areas: 
+    	"bloc1 bloc2 bloc4 bloc5"
+    	"bloc1 bloc3 bloc4 bloc6"; 
 }
-																				/*Part 2 General Setting*/
 
-
-																				/*IMAGEEEEEEEE Settings*/
-
-.column-container {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	height: 350px;
+.photo-activite{
+	height: 100%;
 }
- 
 
-.column-portrait {
+.photo-activite img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 15px;
+}
+
+.titre-activite{
 	display: flex;
 	align-items: center;
-	justify-content: center;
-	width: 24%;
-	
-}
-
-.column-paysage {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-	width: 24%;
-	
-}
-
-
-.bloc-portrait{
-	display: flex;
-	flex-direction: column;
-	width: 90%;
-	height: 350px;
-	border-radius: 15px;
-	box-shadow: lightgray 3px 3px 2px;
-}
-
-.bloc-portrait img{
+	position:absolute;
+	bottom: 0%;
 	width: 100%;
-	height: 88%;
-	object-fit: cover;
-	border-radius: 15px 15px 0px 0px;
+	height: 45px;
+	background-color: white;
+	border-radius: 0px 0px 15px 15px; 
 }
 
-.bloc-paysage-one img{
+
+.bloc1 {
+	position: absolute;
+  	grid-area: bloc1;
+  	height: 100%;
 	width: 100%;
-	height: 75%;
-	object-fit: cover;
-	border-radius: 15px 15px 0px 0px;
+  	border-radius: 15px;
+  	box-shadow: lightgray 4px 3px 10px;
 }
 
-.bloc-paysage-one:nth-child(1){
-	display: flex;
-	flex-direction: column;
-	width: 92%;
-	max-height: 190px;
-	border-radius: 15px;
-	box-shadow: lightgray 3px 3px 2px;
+.bloc2 {
+  	position: absolute;
+	grid-area: bloc2;
+  	width: 100%;
+	height: 110%;
+  	border-radius: 15px;
+  	box-shadow: lightgray 4px 3px 10px;
 }
 
-.bloc-paysage-one:nth-child(2){
-	display: flex;
-	flex-direction: column;
-	width: 92%;
-	max-height: 123px;
-	border-radius: 15px;
-	box-shadow: lightgray 3px 3px 2px;
+.bloc3 {
+	position: absolute;
+  	grid-area: bloc3;
+	align-self: flex-end;
+  	width: 100%;
+	height: 85%;
+  	border-radius: 15px;
+  	box-shadow: lightgray 4px 3px 10px;
 }
 
 
-.bloc-paysage-two img{
+.bloc4 {
+	position: absolute;
+  	grid-area: bloc4;
+  	height: 100%;
 	width: 100%;
-	height: 75%;
-	object-fit: cover;
-	border-radius: 15px 15px 0px 0px;
+  	border-radius: 15px;
+  	box-shadow: lightgray 4px 3px 10px;
 }
 
-.bloc-paysage-two:nth-child(1){
-	display: flex;
-	flex-direction: column;
-	width: 92%;
-	max-height: 160px;
-	border-radius: 15px;
-	box-shadow: lightgray 3px 3px 2px;
+
+.bloc5 {
+	position: absolute;
+  	grid-area: bloc5;
+	height: 95%;
+	width: 100%;
+  	border-radius: 15px;
+  	box-shadow: lightgray 4px 3px 10px;
 }
 
-.bloc-paysage-two:nth-child(2){
-	display: flex;
-	flex-direction: column;
-	width: 92%;
-	max-height: 160px;
-	border-radius: 15px;
-	box-shadow: lightgray 3px 3px 2px;
-}
 
-/*IMAGEEEEEEEE Portrait*/
+.bloc6 {
+	position: relative;
+  	grid-area: bloc6;
+	height: 100%;
+	width: 100%;
+  	border-radius: 15px;
+  	box-shadow: lightgray 4px 3px 10px;
+}
 
 
 																				/*Footer*/
